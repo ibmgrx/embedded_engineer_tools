@@ -1,17 +1,45 @@
-# micro_converter
+# Embedded Engineer Tools
 
-A new Flutter project.
+A lightweight, offline Flutter mobile application designed specifically for embedded engineers and microcontroller programmers.  
+Quickly convert between common data formats used in debugging, register manipulation, serial communication, and low-level programming.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Decimal ↔ Hex** conversion
+- **Decimal ↔ Binary** (8/16/32-bit, with padding & spacing)
+- **Float → Hex** (IEEE 754 single/double precision, Big/Little Endian)
+- **Hex → Float** (IEEE 754 decoding)
+- **Binary ↔ Hex** (live conversion)
+- **ASCII ↔ Hex** (string to hex bytes and vice versa, live)
+- **Simple Calculator** (with decimal point & backspace)
 
-A few resources to get you started if this is your first Flutter project:
+All conversions are **live** (update instantly while typing) on supported screens, with clean input validation and clear buttons.  
+No internet required — 100% offline and lightweight.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<!-- Replace the paths below with actual image paths after uploading screenshots to the repo -->
+
+| Home Screen                  | Decimal ↔ Hex                | Float → Hex (IEEE 754)       |
+|------------------------------|------------------------------|------------------------------|
+| ![Home Screen](screenshots/home.png) | ![Dec-Hex](screenshots/dec_hex.png) | ![Float-Hex](screenshots/float_hex.png) |
+
+| Binary ↔ Hex                 | ASCII ↔ Hex                  | Calculator                   |
+|------------------------------|------------------------------|------------------------------|
+| ![Binary-Hex](screenshots/bin_hex.png) | ![ASCII-Hex](screenshots/ascii_hex.png) | ![Calculator](screenshots/calculator.png) |
+
+*(Add more screenshots as needed)*
+
+## Tech Stack
+
+- Flutter (Dart)
+- Pure Dart: `dart:typed_data`, `dart:convert`
+- Material 3 design
+- No external packages (zero dependencies beyond Flutter SDK)
+
+## Installation (for testing)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ibmgrx/embedded-engineer-tools.git
+   cd embedded-engineer-tools

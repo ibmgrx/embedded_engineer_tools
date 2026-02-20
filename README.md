@@ -43,3 +43,30 @@ No internet required — 100% offline and lightweight.
    ```bash
    git clone https://github.com/ibmgrx/embedded-engineer-tools.git
    cd embedded-engineer-tools
+   
+2. Get dependencies:
+    ```bash
+    flutter pub get
+3. Run on connected device/emulator:
+    ```bash
+    flutter run
+4. Build release APK (recommended for Android):
+    ```bash
+    flutter build apk --release --split-per-abi
+
+APK files will be in: build/app/outputs/flutter-apk/
+
+## How to Contribute
+
+Fork the repo
+Create your feature branch (git checkout -b feature/amazing-feature)
+Commit your changes (git commit -m 'Add some amazing feature')
+Push to the branch (git push origin feature/amazing-feature)
+Open a Pull Request
+
+## License
+MIT License
+See LICENSE for details.
+
+© ibmgrx 2025–present
+Made with ❤️ for embedded developers.
